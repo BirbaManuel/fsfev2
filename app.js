@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
 	res.send("Hello Manu")
 })
 app.get("/demo", (req, res) => {
-	res.setHeader("X-fullStack","I code")
+	res.setHeader("X-fullStack","I love code")
 	res.status(418)
 	res.send("I love coffee")
 })
