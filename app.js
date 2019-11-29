@@ -5,5 +5,9 @@ const port = 3000
 app.get("/", (req, res) => {
 	res.send("Hello Manu")
 })
-
+app.get("/demo", (req, res) => {
+	res.setHeader("X-fullStack","I code")
+	res.status(418)
+	res.send("I love coffee")
+})
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
